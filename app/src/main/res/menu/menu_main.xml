@@ -4,6 +4,7 @@
     tools:context="com.ualberta.ca.capenner_feelsbook.MainActivity">
     <item
         android:id="@+id/action_stats"
+        android:onClick="statsPage"
         android:orderInCategory="100"
         android:title="@string/action_stats"
         app:showAsAction="never" />
