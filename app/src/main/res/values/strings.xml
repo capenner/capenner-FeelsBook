@@ -21,5 +21,11 @@
         <item>Fear</item>
     </string-array>
     <string name="DetailsTitle">Something or whatever</string>
-    <string name="DetailsCommentArea">A comment goes here!</string>
+    <string name="DetailsCommentArea">No comments</string>
+    <string name="loveCount">Love: 0</string>
+    <string name="joyCount">Joy: 0</string>
+    <string name="surpriseCount">Surprise: 0</string>
+    <string name="angerCount">Anger: 0</string>
+    <string name="sadnessCount">Sadness: 0</string>
+    <string name="fearCount">Fear: 0</string>
 </resources>

@@ -1,5 +1,7 @@
 package com.ualberta.ca.capenner_feelsbook;
 
+import java.util.Date;
+
 public class EmotionController {
 
     // Singleton
@@ -15,7 +17,11 @@ public class EmotionController {
         getEmotionList().addEmotion(emotion);
     }
 
-    public void updateEmotionCount(int type) {
-        emotionList.updateEmotionCount(type);
+    public void updateEmotionCount(int type, boolean increase) {
+        emotionList.updateEmotionCount(type, increase);
+    }
+
+    public int getEmotionCount(int type) {
+        return emotionList.getEmotionCount(type);
     }
 }

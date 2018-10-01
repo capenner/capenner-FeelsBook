@@ -1,5 +1,7 @@
 package com.ualberta.ca.capenner_feelsbook;
 
+import android.app.Application;
+import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +13,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class AddEmotion extends AppCompatActivity {
+import java.io.IOException;
+import java.io.Serializable;
+
+public class AddEmotion extends AppCompatActivity implements Serializable {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,20 +47,27 @@ public class AddEmotion extends AppCompatActivity {
                     case "Fear": type=6;
                         break;
                 }
-                control.addEmotion(new Emotion(type, comment));
-                control.updateEmotionCount(type);
-                //Toast.makeText(AddEmotion.this, dropMenuItem + comment , Toast.LENGTH_SHORT).show();
+                Intent intent = getIntent();
+                int position = intent.getIntExtra("emotion.position", -1);
+                if (position == -1) {
+                    control.addEmotion(new Emotion(type, comment));
+                    control.updateEmotionCount(type, true);
+                    Emotion emotion = EmotionController.getEmotionList().getEmotion(0);
+                } else {
+                    Emotion emotion = EmotionController.getEmotionList().getEmotion(position);
+                    int prevType = emotion.getType();
+                    control.updateEmotionCount(prevType, false);
+                    emotion.setType(type);
+                    control.updateEmotionCount(type, true);
+                    emotion.setComment(comment);
+                    EmotionController.getEmotionList().notifyListeners();
+                }
+                try {
+                    SaveEmotionState.saveEmotionList(AddEmotion.this, "data.sav", EmotionController.getEmotionList());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 finish();
-            }
-        });
-
-        Button testButton = findViewById(R.id.testButton);
-        testButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Toast.makeText(AddEmotion.this, "Ayyy" , Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(AddEmotion.this, EmotionDetailsActivity.class);
-                startActivity(intent);
             }
         });
     }

@@ -6,24 +6,110 @@
     android:layout_height="match_parent"
     android:backgroundTintMode="screen">
 
-    <TextView
+    <View
         android:id="@+id/emotionStats"
-        android:layout_width="247dp"
-        android:layout_height="426dp"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="100dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="45dp"
+        android:layout_width="251dp"
+        android:layout_height="257dp"
+        android:background="@android:color/background_light"
         android:elevation="20dp"
-        android:lineSpacingExtra="8sp"
-        android:padding="10dp"
-        android:text="@string/emotionStats"
-        android:textAlignment="viewStart"
-        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.502" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loveCount"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="21dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="4dp"
+        android:text="@string/loveCount"
+        app:layout_constraintEnd_toEndOf="@+id/emotionStats"
+        app:layout_constraintStart_toStartOf="@+id/emotionStats"
+        app:layout_constraintTop_toTopOf="@+id/emotionStats" />
+
+    <TextView
+        android:id="@+id/joyCount"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="21dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="4dp"
+        android:text="@string/joyCount"
+        app:layout_constraintEnd_toEndOf="@+id/emotionStats"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emotionStats"
+        app:layout_constraintTop_toBottomOf="@+id/loveCount" />
+
+    <TextView
+        android:id="@+id/surpriseCount"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="21dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="4dp"
+        android:text="@string/surpriseCount"
+        app:layout_constraintEnd_toEndOf="@+id/emotionStats"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emotionStats"
+        app:layout_constraintTop_toBottomOf="@+id/joyCount" />
+
+    <TextView
+        android:id="@+id/angerCount"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="21dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="4dp"
+        android:text="@string/angerCount"
+        app:layout_constraintEnd_toEndOf="@+id/emotionStats"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emotionStats"
+        app:layout_constraintTop_toBottomOf="@+id/surpriseCount" />
+
+    <TextView
+        android:id="@+id/sadnessCount"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="21dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="4dp"
+        android:text="@string/sadnessCount"
+        app:layout_constraintEnd_toEndOf="@+id/emotionStats"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emotionStats"
+        app:layout_constraintTop_toBottomOf="@+id/angerCount" />
+
+    <TextView
+        android:id="@+id/fearCount"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="21dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="4dp"
+        android:text="@string/fearCount"
+        app:layout_constraintEnd_toEndOf="@+id/emotionStats"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emotionStats"
+        app:layout_constraintTop_toBottomOf="@+id/sadnessCount" />
+
 </android.support.constraint.ConstraintLayout>
