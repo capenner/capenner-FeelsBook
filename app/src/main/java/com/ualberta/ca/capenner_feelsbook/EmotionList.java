@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
+import java.util.ListIterator;
 
 public class EmotionList implements Serializable {
     private int LoveCount;      //type 1
@@ -87,25 +88,6 @@ public class EmotionList implements Serializable {
         return emotionList.get(position);
     }
 
-    public void editEmotion(Emotion emotion) {
-        // Fix later
-        int index;
-        if (emotionList.contains(emotion)) {
-            index = emotionList.indexOf(emotion);
-            emotionList.set(index, emotion);
-        }
-    }
-
-    public LocalDateTime getEmotionDate(Emotion emotion) {
-        int index;
-        if (emotionList.contains(emotion)) {
-            index = emotionList.indexOf(emotion);
-        } else {
-            return null;
-        }
-        return emotionList.get(index).getDate();
-    }
-
     public void addEmotion(Emotion emotion) {
         emotionList.add(0, emotion);
         notifyListeners();
@@ -116,17 +98,24 @@ public class EmotionList implements Serializable {
         notifyListeners();
     }
 
+    private ArrayList<Listener> getListeners() {
+        if (listeners == null) {
+            listeners = new ArrayList<Listener>();
+        }
+        return listeners;
+    }
+
     public void notifyListeners() {
-        for (Listener listener: listeners) {
+        for (Listener listener: getListeners()) {
             listener.update();
         }
     }
 
     public void addListener(Listener listener) {
-        listeners.add(listener);
+        getListeners().add(listener);
     }
 
     public void removeListener(Listener listener) {
-        listeners.remove(listener);
+        getListeners().remove(listener);
     }
 }

@@ -20,6 +20,8 @@
         <item>Sadness</item>
         <item>Fear</item>
     </string-array>
+    <string name="setDate">Date</string>
+    <string name="setTime">Time</string>
     <string name="DetailsTitle">Something or whatever</string>
     <string name="DetailsCommentArea">No comments</string>
     <string name="loveCount">Love: 0</string>

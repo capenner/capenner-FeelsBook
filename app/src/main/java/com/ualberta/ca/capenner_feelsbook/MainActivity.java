@@ -60,19 +60,14 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class MainActivity extends AppCompatActivity implements Serializable{
+public class MainActivity extends AppCompatActivity {
     private static final String FILENAME = "data.sav";
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        SaveEmotionState.initSaveState(this.getApplicationContext());
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab1 = (FloatingActionButton) findViewById(R.id.add_button);
@@ -83,31 +78,25 @@ public class MainActivity extends AppCompatActivity implements Serializable{
                 startActivity(intent);
             }
         });
+        ListView listView = findViewById(R.id.EmotionListView);
+        EmotionList emotionList = EmotionController.getEmotionList();
+        Collection<Emotion> emotions = emotionList.getEmotionCollection();
+        final ArrayList<Emotion> list = new ArrayList<Emotion>(emotions);
+        final ArrayAdapter<Emotion> emotionAdapter = new ArrayAdapter<Emotion>(this, android.R.layout.simple_list_item_1, list);
+        listView.setAdapter(emotionAdapter);
         try {
-            EmotionList emotionList = SaveEmotionState.loadEmotionList(MainActivity.this, "data.sav");
-            Collection<Emotion> emotions = emotionList.getEmotionCollection();
-            final ArrayList<Emotion> list = new ArrayList<Emotion>(emotions);
-            ListView listView = findViewById(R.id.EmotionListView);
-            final ArrayAdapter<Emotion> emotionAdapter = new ArrayAdapter<Emotion>(this, android.R.layout.simple_list_item_1, list);
-            listView.setAdapter(emotionAdapter);
-        } catch (IOException | ClassNotFoundException e) {
+            EmotionController.getEmotionList().addListener(new Listener() {
+                @Override
+                public void update() {
+                    list.clear();
+                    Collection<Emotion> emotions = EmotionController.getEmotionList().getEmotionCollection();
+                    list.addAll(emotions);
+                    emotionAdapter.notifyDataSetChanged();
+                }
+            });
+        } catch (NullPointerException e) {
             e.printStackTrace();
-            ListView listView = findViewById(R.id.EmotionListView);
-            Collection<Emotion> emotions = EmotionController.getEmotionList().getEmotionCollection();
-            final ArrayList<Emotion> list = new ArrayList<Emotion>(emotions);
-            final ArrayAdapter<Emotion> emotionAdapter = new ArrayAdapter<Emotion>(this, android.R.layout.simple_list_item_1, list);
-            listView.setAdapter(emotionAdapter);
         }
-        EmotionController.getEmotionList().addListener(new Listener() {
-            @Override
-            public void update() {
-                list.clear();
-                Collection<Emotion> emotions = EmotionController.getEmotionList().getEmotionCollection();
-                list.addAll(emotions);
-                emotionAdapter.notifyDataSetChanged();
-            }
-        });
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView parent, View view, int position, long id) {
@@ -118,6 +107,7 @@ public class MainActivity extends AppCompatActivity implements Serializable{
         });
     }
 
+    /*Basics from Dinesh Sharma from https://stackoverflow.com/questions/5944987/how-to-create-a-popup-window-popupwindow-in-android*/
     public void statsPage(MenuItem menuItem) {
         LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         View statsView = inflater.inflate(R.layout.popup_window, null);
@@ -176,5 +166,9 @@ public class MainActivity extends AppCompatActivity implements Serializable{
         return super.onOptionsItemSelected(item);
     }
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        EmotionController.getEmotionList().listeners.clear();
+    }
 }

@@ -53,7 +53,7 @@ public class EmotionDetailsActivity extends AppCompatActivity {
             case 6: type="Fear";
                 break;
         }
-        LocalDateTime date = emotion.getDate();
+        LocalDateTime date = emotion.getTimestamp();
         title = type + " was felt at " + date.toString();
         title_content.setText(title);
         if (!emotion.getComment().equals("")) {

@@ -6,6 +6,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Comparator;
 import java.util.Date;
 
 import static java.time.format.DateTimeFormatter.ISO_LOCAL_DATE_TIME;
@@ -48,8 +49,12 @@ public class Emotion implements Serializable {
         return this.comment;
     }
 
-    public LocalDateTime getDate() {
+    public LocalDateTime getTimestamp() {
         return this.timestamp;
+    }
+
+    public void setTimestamp(LocalDateTime timestamp) {
+        this.timestamp = timestamp;
     }
 
     private void setFace(int type) {
@@ -79,8 +84,17 @@ public class Emotion implements Serializable {
         return this.face;
     }
 
+    public static Comparator<Emotion> emotionTimestampComparator = new Comparator<Emotion>() {
+        @Override
+        public int compare(Emotion o1, Emotion o2) {
+            LocalDateTime localDateTime1 = o1.getTimestamp();
+            LocalDateTime localDateTime2 = o2.getTimestamp();
+            return localDateTime2.compareTo(localDateTime1);
+        }
+    };
+
     @Override
     public String toString() {
-        return getFace() + " @ " + this.getDate().format(ISO_LOCAL_DATE_TIME);
+        return getFace() + " @ " + this.getTimestamp().format(ISO_LOCAL_DATE_TIME);
     }
 }

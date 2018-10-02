@@ -1,9 +1,11 @@
 package com.ualberta.ca.capenner_feelsbook;
 
 import android.app.Application;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,13 +17,41 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.Collection;
+import java.util.Collections;
 
-public class AddEmotion extends AppCompatActivity implements Serializable {
+public class AddEmotion extends AppCompatActivity {
+    private static final String FILENAME = "data.sav";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_emotion);
+        SaveEmotionState.initSaveState(this.getApplicationContext());
+
+        Intent intent = getIntent();
+        final int position = intent.getIntExtra("emotion.position", -1);
+        if (position != -1) {
+            Button dateButton = findViewById(R.id.setDate);
+            Button timeButton = findViewById(R.id.setTime);
+            dateButton.setVisibility(View.VISIBLE);
+            timeButton.setVisibility(View.VISIBLE);
+            //Show date and time buttons to get new time stuff
+            dateButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    DialogFragment newFragment = new DatePickerFragment();
+                    newFragment.show(getSupportFragmentManager(), "datePicker");
+                }
+            });
+            timeButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    DialogFragment newFragment = new TimePickerFragment();
+                    newFragment.show(getSupportFragmentManager(), "timePicker");
+                }
+            });
+        }
 
         FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.save_button);
         fab2.setOnClickListener(new View.OnClickListener() {
@@ -47,12 +77,10 @@ public class AddEmotion extends AppCompatActivity implements Serializable {
                     case "Fear": type=6;
                         break;
                 }
-                Intent intent = getIntent();
-                int position = intent.getIntExtra("emotion.position", -1);
+
                 if (position == -1) {
                     control.addEmotion(new Emotion(type, comment));
                     control.updateEmotionCount(type, true);
-                    Emotion emotion = EmotionController.getEmotionList().getEmotion(0);
                 } else {
                     Emotion emotion = EmotionController.getEmotionList().getEmotion(position);
                     int prevType = emotion.getType();
@@ -60,15 +88,16 @@ public class AddEmotion extends AppCompatActivity implements Serializable {
                     emotion.setType(type);
                     control.updateEmotionCount(type, true);
                     emotion.setComment(comment);
-                    EmotionController.getEmotionList().notifyListeners();
-                }
-                try {
-                    SaveEmotionState.saveEmotionList(AddEmotion.this, "data.sav", EmotionController.getEmotionList());
-                } catch (IOException e) {
-                    e.printStackTrace();
                 }
                 finish();
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Collections.sort(EmotionController.getEmotionList().getEmotionList(), Emotion.emotionTimestampComparator);
+        EmotionController.getEmotionList().notifyListeners();
     }
 }
