@@ -1,0 +1,135 @@
+-- Merging decision tree log ---
+manifest
+ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:2:1-27:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\e7372e33687fa106d453e13f78892436\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\adbd333412806949d6665afb81f76206\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\c12c2ca240b7cc77a8a198313ef9d06d\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\3b10a22c9df7943e4e7ace655ac995b6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\6662cedc23c760556c3c6c1414941541\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7f460a8f8c5fb9ed487e791cf357d3df\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\18d41ee40dd24a7c3b0d12293716d90e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\93073ad0a60adff2e39d3e1d3a131f9a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\22fb9ff3291542c94bbbd1fbba0e574b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\1a5194e949fb42226e003541766add82\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\091b6aba7e634557a4887a86e4d8b9ce\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\35a8619b293ff4801c0119e5c132ef02\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\4261e132b761f0159e23d1370bbb891d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\55fcc9da4481b13665d0b2df428b7efe\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\92e1e5565a43fa996b8bb751fa012c5f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\33eadbe6d2b7484870d35556ad849dcb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c7902cf58e9617d9287d563af114be3c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a3d98b2d7e80e518d079e8a96954d4f3\AndroidManifest.xml:17:1-22:12
+INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:3:5-49
+		INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+		INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:5:5-25:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\c12c2ca240b7cc77a8a198313ef9d06d\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\c12c2ca240b7cc77a8a198313ef9d06d\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.ualberta.ca.capenner_feelsbook.MainActivity
+ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:12:9-21:20
+	android:label
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:14:13-45
+	android:theme
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:15:13-56
+	android:name
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.ualberta.ca.capenner_feelsbook.AddEmotion
+ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:22:9-48
+	android:name
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:22:19-45
+activity#com.ualberta.ca.capenner_feelsbook.EmotionDetailsActivity
+ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:23:9-24:58
+	android:theme
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:24:13-56
+	android:name
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml:23:19-57
+uses-sdk
+INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\e7372e33687fa106d453e13f78892436\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\e7372e33687fa106d453e13f78892436\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\adbd333412806949d6665afb81f76206\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\adbd333412806949d6665afb81f76206\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\c12c2ca240b7cc77a8a198313ef9d06d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\c12c2ca240b7cc77a8a198313ef9d06d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\3b10a22c9df7943e4e7ace655ac995b6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\3b10a22c9df7943e4e7ace655ac995b6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\6662cedc23c760556c3c6c1414941541\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\6662cedc23c760556c3c6c1414941541\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7f460a8f8c5fb9ed487e791cf357d3df\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7f460a8f8c5fb9ed487e791cf357d3df\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\18d41ee40dd24a7c3b0d12293716d90e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\18d41ee40dd24a7c3b0d12293716d90e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\93073ad0a60adff2e39d3e1d3a131f9a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\93073ad0a60adff2e39d3e1d3a131f9a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\22fb9ff3291542c94bbbd1fbba0e574b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\22fb9ff3291542c94bbbd1fbba0e574b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\1a5194e949fb42226e003541766add82\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\1a5194e949fb42226e003541766add82\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\091b6aba7e634557a4887a86e4d8b9ce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\091b6aba7e634557a4887a86e4d8b9ce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\35a8619b293ff4801c0119e5c132ef02\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\35a8619b293ff4801c0119e5c132ef02\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\4261e132b761f0159e23d1370bbb891d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\4261e132b761f0159e23d1370bbb891d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\55fcc9da4481b13665d0b2df428b7efe\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\55fcc9da4481b13665d0b2df428b7efe\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\92e1e5565a43fa996b8bb751fa012c5f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\92e1e5565a43fa996b8bb751fa012c5f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\33eadbe6d2b7484870d35556ad849dcb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\33eadbe6d2b7484870d35556ad849dcb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c7902cf58e9617d9287d563af114be3c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c7902cf58e9617d9287d563af114be3c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a3d98b2d7e80e518d079e8a96954d4f3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Quintessential Gamer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a3d98b2d7e80e518d079e8a96954d4f3\AndroidManifest.xml:20:5-44
+INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+		INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+		ADDED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
+		INJECTED from A:\Projects\Android Studio\capenner-FeelsBook\app\src\main\AndroidManifest.xml
